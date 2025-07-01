@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brisa Viajera®</title>
+  <link rel="icon" href="avion.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <header class="main-header">
+  <div class="header-left">
+    <button class="logo-button">
+      <img src="logo-avion.png" alt="Logo avión" class="logo-avion" />
+    </button>
+
+  </div>
+
+  <nav class="header-center">
+    <a href="#paquetes"><i class='bx bx-package'></i><span> Paquetes</span></a>
+    <a href="#vuelos"><i class='bx  bx-paper-plane'  ></i><span> Vuelos</span></a>
+    <a href="#vehiculos"><i class='bx bx-car'></i><span> Vehículos</span></a>
+  </nav>
+
+  <div class="header-right">
+    <a href="carrito.html">
+    <img src="cart.png" alt="Carrito" class="icon-style" />
+
+    </a>
+  <button id="toggleMode">
+    <img src="icon-moon.png" alt="Modo" class="icon-style" id="modeToggleIcon" />
+  </button>
+    <div class="dropdown" style="margin-left: 10px;">
+      <button class="dropbtn"><img src="menu-wider.png" alt="Modo" class="icon-style" id="modeToggleIcon" /></button>
+      <div class="dropdown-content">
+        <a href="centro_ayuda.html">Centro de Ayuda</a>
+        <a href="registro.html">Registro</a>
+      </div>
+    </div>
+  </div>
+
+  
+
+</header>
+
+<section id="paquetes" class="section">
+  <h2>Paquetes</h2>
+  <h3 class="carousel-title">América</h3>
+  <div class="carousel-container" data-carousel="0">
+    <button class="prev" data-carousel="0">&#10094;</button>
+    <div class="carousel" data-carousel-id="0">
+
+      <div class="card" data-index="0">
+        <img src="peru.jpg" alt="" loading="lazy">
+        <p>Machu Picchu, Perú</p>
+
+      </div>
+      <div class="card" data-index="1">
+        <img src="iguazu.jpg" alt="" loading="lazy">
+        <p>Cataratas del Iguazú, Argentina/Brasil</p>
+      </div>
+
+      <div class="card" data-index="2">
+        <img src="cañon.jpg" alt="" loading="lazy">
+        <p>Gran Cañón, EE.UU. (Arizona)</p>
+      </div>
+
+      <div class="card" data-index="3">
+        <img src="janeiro.jpg" alt="" loading="lazy">
+        <p>Río de Janeiro, Brasil</p>
+      </div>
+
+      <div class="card" data-index="4">
+        <img src="ñiagara.jpg" alt="" loading="lazy">
+        <p>Niágara Falls, Canadá/EE.UU.</p>
+      </div>
+
+      <div class="card" data-index="5">
+        <img src="patagonia.jpg" alt="" loading="lazy">
+        <p>Patagonia – El Calafate y Glaciar Perito Moreno, Argentina</p>
+      </div>
+
+    </div>
+    <button class="next" data-carousel="0">&#10095;</button>
+  </div>
+
+  <h3 class="carousel-title">Europa</h3>
+  <div class="carousel-container" data-carousel="1">
+    <button class="prev" data-carousel="1">&#10094;</button>
+    <div class="carousel" data-carousel-id="1">
+
+      <div class="card" data-index="6">
+        <img src="paris.jpg" alt="" loading="lazy">
+        <p>París, Francia</p>
+      </div>
+
+      <div class="card" data-index="7">
+        <img src="grecia.jpg" alt="" loading="lazy">
+        <p>Santorini, Grecia</p>
+      </div>
+
+      <div class="card" data-index="8">
+        <img src="coliseo.jpg" alt="" loading="lazy">
+        <p>Roma, Italia</p>
+      </div>
+
+      <div class="card" data-index="9">
+        <img src="barcelona.jpg" alt="" loading="lazy">
+        <p>Barcelona, España</p>
+      </div>
+
+      <div class="card" data-index="10">
+        <img src="amsterdam.jpg" alt="" loading="lazy">
+        <p>Ámsterdam, Países Bajos</p>
+      </div>
+
+      <div class="card" data-index="11">
+        <img src="escocia.jpg" alt="" loading="lazy">
+        <p>Edimburgo, Escocia</p>
+      </div>
+
+    </div>
+    <button class="next" data-carousel="1">&#10095;</button>
+  </div>
+
+  <h3 class="carousel-title">Asia</h3>
+  <div class="carousel-container" data-carousel="2">
+    <button class="prev" data-carousel="2">&#10094;</button>
+    <div class="carousel" data-carousel-id="2">
+
+      <div class="card" data-index="12">
+        <img src="tokio.jpg" alt="" loading="lazy">
+        <p>Tokio, Japón</p>
+      </div>
+
+      <div class="card" data-index="13">
+        <img src="bali.jpg" alt="" loading="lazy">
+        <p>Bali, Indonesia</p>
+      </div>
+
+      <div class="card" data-index="14">
+        <img src="tailandia.jpg" alt="" loading="lazy">
+        <p>Bangkok, Tailandia</p>
+      </div>
+
+      <div class="card" data-index="15">
+        <img src="india.jpg" alt="">
+        <p>Delhi / Agra (Taj Mahal), India</p>
+      </div>
+
+      <div class="card" data-index="16">
+        <img src="seul.jpg" alt="" loading="lazy">
+        <p>Seúl, Corea del Sur</p>
+      </div>
+
+      <div class="card" data-index="17">
+        <img src="dubai.jpg" alt="" loading="lazy">
+        <p>Dubái, EAU</p>
+      </div>
+
+    </div>
+    <button class="next" data-carousel="2">&#10095;</button>
+  </div>
+
+  <h3 class="carousel-title">Africa</h3>
+  <div class="carousel-container" data-carousel="3">
+    <button class="prev" data-carousel="3">&#10094;</button>
+    <div class="carousel" data-carousel-id="3">
+
+      <div class="card" data-index="18">
+        <img src="cabo.jpg" alt="" loading="lazy">
+        <p>Ciudad del Cabo, Sudáfrica</p>
+      </div>
+
+      <div class="card" data-index="19">
+        <img src="marruecos.jpg" alt="" loading="lazy">
+        <p>Marrakech, Marruecos</p>
+      </div>
+
+      <div class="card" data-index="20">
+        <img src="leon.jpg" alt="" loading="lazy">
+        <p>Safaris en Kenia (Masai Mara / Amboseli)</p>
+      </div>
+
+      <div class="card" data-index="21">
+        <img src="zanzibar.jpg" alt="" loading="lazy">
+        <p>Zanzíbar, Tanzania</p>
+      </div>
+
+      <div class="card" data-index="22">
+        <img src="victoria_falls.jpg" alt="" loading="lazy">
+        <p>Victoria Falls, Zimbabue/Zambia</p>
+      </div>
+
+      <div class="card" data-index="23">
+        <img src="libia.jpg" alt="" loading="lazy">
+        <p>Leptis Magna, Libia</p>
+      </div>
+
+    </div>
+    <button class="next" data-carousel="3">&#10095;</button>
+  </div>
+</section>
+
+  <!-- Modal general -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <!-- Imagen -->
+    <img src="casa.avif" alt="Alojamiento ejemplo" class="modal-img" />
+
+    <!-- Info -->
+    <div class="modal-info">
+      <h2>Casa en la montaña con vista al lago</h2>
+      <p>Disfrutá de esta acogedora cabaña rústica ubicada en Bariloche. Ideal para parejas o familias pequeñas, con chimenea, cocina equipada y acceso directo al lago. ¡Perfecta para desconectar!</p>
+      <p><strong>Precio por noche:</strong> $45.000 ARS</p>
+    </div>
+
+    <!-- Botón reservar -->
+    <button class="btn-reservar">Reservar</button>
+    <div id="reservaConfirmacion" class="reserva-confirmacion">  ✅ ¡Reserva confirmada!</div>
+
+  </div>
+</div>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <span>Brisa Viajera</span>
+      <p>Explorá el mundo con nosotros. Destinos únicos, experiencias inolvidables y atención personalizada.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#vehiculos">Vehículos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>📍 Buenos Aires, Argentina</p>
+      <p>📞 +54 11 2520 9483</p>
+      <p>✉️ bviajes@gmail.com</p>
+      <div class="footer-socials">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+  <div class="footer-logo-texto">
+    <img src="logo-avion.png" alt="Logo Brisa Viajera" class="footer-logo-mini">
+    <span>&copy; 2025 Brisa Viajera - All rights reserved.</span>
+  </div>
+  </div>
+
+</footer>
+
+  <script src="script.js"></script>
+</body> 
+</html>

@@ -1,0 +1,120 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --card-bg: #f5f5f5;
+  --primary-color: #000000;
+  --link-color: #000000;
+  --button-bg: #000000;
+  --button-hover: #333333;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #eeeeee;
+  --card-bg: #1f1f1f;
+  --link-color: #ffffff;
+  --button-bg: #ffffff;
+  --button-hover: #dddddd;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.form-container {
+  max-width: 420px;
+  margin: 4rem auto;
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.6rem 0 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  color: #000;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode input {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: var(--button-bg);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.02);
+}
+
+body.dark-mode button {
+  background-color: var(--button-bg);
+  color: #121212;
+}
+
+body.dark-mode button:hover {
+  background-color: var(--button-hover);
+}
+
+.extra-link {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.extra-link a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.extra-link a:hover {
+  color: #ffd700;
+}
+
+body.dark-mode .extra-link a {
+  color: var(--link-color);
+}
+
+body.dark-mode .extra-link a:hover {
+  color: #ffd700;
+}
+
+body:not(.dark-mode) .form-container {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+
